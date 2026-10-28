@@ -2,6 +2,15 @@
   "use strict";
   var config = window.UNIQUE_FITNESS_CONFIG || {};
   var contact = config.contact || {};
+
+  // The click-to-chat button is hidden until a real WhatsApp number is configured.
+  var whatsappButton = document.getElementById("whatsapp-float");
+  var whatsappNumber = String(contact.whatsappNumber || "").replace(/\\D/g, "");
+  if (whatsappButton && whatsappNumber) {
+    var whatsappMessage = encodeURIComponent("Hi Unique Fitness! I found your website and would like to ask about membership options.");
+    whatsappButton.href = "https://wa.me/" + whatsappNumber + "?text=" + whatsappMessage;
+    whatsappButton.hidden = false;
+  }
   var reducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   var address = document.getElementById("address-text");
