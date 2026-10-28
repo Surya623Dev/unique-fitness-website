@@ -10,7 +10,7 @@ window.UNIQUE_FITNESS_CONFIG = {
     whatsappNumber: "918686836628",
     email: "",
     address: "Third Floor, Mini Bypass Road, Beside Amma Furniture Showroom, Ramamurthy Nagar, Nellore - 1",
-    mapUrl: "https://www.google.com/maps/place/Vamsi%E2%80%99s+UNIQUE+FITNESS/@14.4475425,79.9879551,17z/",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Vamsi%27s%20UNIQUE%20FITNESS%2C%20Nellore%2C%20Andhra%20Pradesh",
     openingHours: ""
   },
   social: { instagram: "", facebook: "" }
