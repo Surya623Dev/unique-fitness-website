@@ -5,7 +5,7 @@
 
   // The click-to-chat button is hidden until a real WhatsApp number is configured.
   var whatsappButton = document.getElementById("whatsapp-float");
-  var whatsappNumber = String(contact.whatsappNumber || "").replace(/\\D/g, "");
+  var whatsappNumber = String(contact.whatsappNumber || "").replace(/\D/g, "");
   if (whatsappButton && whatsappNumber) {
     var whatsappMessage = encodeURIComponent("Hi Unique Fitness! I found your website and would like to ask about membership options.");
     whatsappButton.href = "https://wa.me/" + whatsappNumber + "?text=" + whatsappMessage;
