@@ -38,6 +38,15 @@ GitHub Pages can host the static site. To use the included workflow, open reposi
 ## Form configuration
 The form uses Netlify's native static HTML form processing, a honeypot field and browser validation. It submits to `/thank-you` when hosted on Netlify, which serves the `thank-you.html` confirmation page. On GitHub Pages or a local file preview, the site explains that form processing is not available instead of falsely reporting a successful submission.
 
+## WhatsApp click-to-chat
+- The floating WhatsApp button is displayed only after `contact.whatsappNumber` is filled in within `site-config.js`.
+- Use the full international number as digits only (for India, `91` followed by the mobile number; no plus sign, spaces, brackets or dashes). That number must already have a WhatsApp account.
+- The button opens a chat with a pre-filled enquiry message; the visitor still presses Send. This uses WhatsApp click-to-chat and does not automatically send messages or require WhatsApp API fees.
+
+## Enquiry email notifications
+- After the first successful Netlify deployment registers `trial-enquiry`, open Forms → Submission notifications → Add notification → Email notification and enter the inbox that should receive lead alerts.
+- Netlify must detect the form after a deployment before notifications can be selected and tested. Submit a real test enquiry and verify both the Forms record and notification email.
+
 ## Styling
 - Obsidian: #090A09
 - Electric lime: #B7FF35
