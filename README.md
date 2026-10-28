@@ -25,7 +25,7 @@ The contact form is configured for Netlify Forms.
 4. In Netlify site settings, enable form handling if prompted and configure email notifications or your preferred follow-up workflow.
 5. Submit a test enquiry and confirm it appears in Netlify Forms before launching publicly.
 
-GitHub Pages can host the static site, and the included workflow can deploy it after Pages is enabled in repository Settings → Pages. GitHub Pages does not process HTML form submissions; use Netlify (recommended) or configure another form/API provider before collecting leads.
+GitHub Pages can host the static site. To use the included workflow, open repository **Settings → Pages** and set the source to **GitHub Actions**; the workflow then deploys on pushes to `main`. GitHub Pages does not process HTML form submissions; use Netlify (recommended) or configure another form/API provider before collecting leads.
 
 ## Before public launch
 - Replace sample gym and trainer photography with licensed/owned photos when ready.
