@@ -36,7 +36,7 @@ GitHub Pages can host the static site. To use the included workflow, open reposi
 - Replace the illustrative open graph image if desired and configure a final domain/canonical URL once known.
 
 ## Form configuration
-The form uses Netlify's native static HTML form processing, a honeypot field and browser validation. It submits to thank-you.html when hosted on Netlify. On GitHub Pages or a local file preview, the site explains that form processing is not available instead of falsely reporting a successful submission.
+The form uses Netlify's native static HTML form processing, a honeypot field and browser validation. It submits to `/thank-you` when hosted on Netlify, which serves the `thank-you.html` confirmation page. On GitHub Pages or a local file preview, the site explains that form processing is not available instead of falsely reporting a successful submission.
 
 ## Styling
 - Obsidian: #090A09
