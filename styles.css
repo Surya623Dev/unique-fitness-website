@@ -49,3 +49,15 @@
 @media (max-width: 420px) {
   .whatsapp-float { right: 12px; bottom: 12px; min-height: 48px; padding: 0 15px; }
 }
+
+/* Supplied Vamsi's Unique Fitness logo and map-linked address */
+.brand { flex-direction: row; align-items: center; gap: 10px; }
+.brand-logo { display:block; width:46px; height:56px; flex:0 0 auto; object-fit:contain; }
+.brand-copy { display:inline-flex; flex-direction:column; gap:4px; min-width:0; }
+#address-text a { color:var(--lime); text-decoration:underline; text-decoration-color:#65794a; text-underline-offset:3px; }
+#address-text a:hover { color:var(--lime-soft); text-decoration-color:var(--lime-soft); }
+@media (max-width:450px) {
+  .brand-logo { width:38px; height:48px; }
+  .brand-copy .brand-name { font-size:21px; }
+  .brand-copy .brand-tagline { font-size:6px; letter-spacing:.12em; }
+}
