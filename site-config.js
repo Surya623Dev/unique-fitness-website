@@ -5,9 +5,9 @@ window.UNIQUE_FITNESS_CONFIG = {
   name: "Unique Fitness",
   tagline: "Strength · Discipline · Progress",
   contact: {
-    phoneDisplay: "",
-    phoneE164: "",
-    whatsappNumber: "",
+    phoneDisplay: "+91 86868 36628",
+    phoneE164: "+918686836628",
+    whatsappNumber: "918686836628",
     email: "",
     address: "",
     openingHours: ""
