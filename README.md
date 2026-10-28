@@ -1,30 +1,45 @@
-# Unique Fitness — Gym Landing Page Prototype
+# Unique Fitness — Production-ready static website foundation
 
-A dark cinematic, black-metallic and neon-lime landing page prototype for **Unique Fitness**.
+Dark cinematic bodybuilding / strength-training website for **Unique Fitness**, with black and gunmetal surfaces, electric-lime accents and sample photography.
 
 ## Files
-- `index.html` — full responsive landing page and interactions.
-- `visual-concept.svg` — compact art-direction preview for the project.
+- index.html — homepage and Netlify-enabled enquiry form
+- styles.css — responsive UI, layout, motion, focus states and reduced-motion support
+- script.js — responsive menu, section highlighting, program selector and form-host checks
+- site-config.js — contact details and public branding settings
+- thank-you.html — post-enquiry confirmation page
+- privacy.html — starter privacy notice (review and verify before launch)
+- favicon.svg — brand favicon
+- netlify.toml — static publish settings and security headers
+- .github/workflows/pages.yml — GitHub Pages deployment workflow
+- visual-concept.svg — brand-direction reference
 
-## Included
-- Hero, gym overview, facility gallery, training programs, trainers, testimonials, memberships and contact section.
-- Interactive training-program selection and monthly/yearly pricing switch.
-- Responsive mobile navigation, scroll-based reveal effects and reduced-motion support.
-- Free-trial demo modal with browser-side form validation.
+## Local preview
+Open index.html in a browser. External sample photos and Google Fonts require an internet connection. Some form behavior depends on deployment hosting.
 
-## Run locally
-Open `index.html` in a modern browser. No build step is required.
+## Recommended production deployment: Netlify
+The contact form is configured for Netlify Forms.
+1. Import this GitHub repository into Netlify.
+2. Use the repository root as the publish directory; the included netlify.toml already sets this.
+3. Deploy the site. Netlify should detect the form named trial-enquiry.
+4. In Netlify site settings, enable form handling if prompted and configure email notifications or your preferred follow-up workflow.
+5. Submit a test enquiry and confirm it appears in Netlify Forms before launching publicly.
 
-## Deployment
-This is a static website that can be deployed using Netlify or GitHub Pages. To publish with GitHub Pages, open **Settings → Pages**, select **Deploy from a branch**, choose `main` and `/(root)`, then save.
+GitHub Pages can host the static site, and the included workflow can deploy it after Pages is enabled in repository Settings → Pages. GitHub Pages does not process HTML form submissions; use Netlify (recommended) or configure another form/API provider before collecting leads.
 
-## Before production
-Replace sample stock photography, trainer names, testimonials, illustrative membership prices, gym access/equipment claims, contact details and opening hours with verified gym information. The free-trial form is a frontend demo and does not send enquiries anywhere yet. Connect a backend, CRM or form service before collecting real leads.
+## Before public launch
+- Replace sample gym and trainer photography with licensed/owned photos when ready.
+- Edit site-config.js with verified phone number, WhatsApp number, email, address, hours and social URLs.
+- Confirm services, access claims, coaching availability, membership inclusions, pricing and terms. The page avoids fixed prices because they have not been provided.
+- Review the privacy notice to match real processing, retention, data access and contact practices.
+- Configure form notifications and test delivery on the production domain.
+- Replace the illustrative open graph image if desired and configure a final domain/canonical URL once known.
 
-External images and Google Fonts require an internet connection.
+## Form configuration
+The form uses Netlify's native static HTML form processing, a honeypot field and browser validation. It submits to thank-you.html when hosted on Netlify. On GitHub Pages or a local file preview, the site explains that form processing is not available instead of falsely reporting a successful submission.
 
-## Branding
-- Obsidian: `#090A09`
-- Electric lime: `#B7FF35`
-- Gunmetal: `#202220`
-- Titanium white: `#F1F1EC`
+## Styling
+- Obsidian: #090A09
+- Electric lime: #B7FF35
+- Gunmetal: #202220
+- Titanium white: #F1F2EC
