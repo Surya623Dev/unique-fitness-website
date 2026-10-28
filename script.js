@@ -75,7 +75,7 @@
   document.querySelectorAll("[data-plan]").forEach(function (link) {
     link.addEventListener("click", function () {
       var select = document.getElementById("interest");
-      if (select) select.value = link.getAttribute("data-plan") === "Coaching" ? "Training support" : "Membership pricing";
+      if (select) select.value = link.getAttribute("data-plan") || "Membership pricing";
     });
   });
 
@@ -102,7 +102,7 @@
     document.querySelectorAll(".reveal").forEach(function (element) { element.classList.add("is-visible"); });
   }
 
-  var form = document.querySelector('form[name="trial-enquiry"]');
+  var form = document.querySelector('form[name="membership-enquiry"]');
   var status = document.getElementById("form-status");
   if (form) form.addEventListener("submit", function (event) {
     var host = window.location.hostname;
@@ -126,7 +126,7 @@
       if (!target) return;
       event.preventDefault();
       target.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "start" });
-      if (target.id === "trial") window.setTimeout(function () {
+      if (target.id === "enquiry") window.setTimeout(function () {
         var field = document.getElementById("full-name");
         if (field) field.focus({ preventScroll: true });
       }, reducedMotion ? 0 : 300);
