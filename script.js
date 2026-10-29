@@ -14,18 +14,7 @@
   var reducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   var address = document.getElementById("address-text");
-  if (address && contact.address) {
-    if (contact.mapUrl) {
-      var mapLink = document.createElement("a");
-      mapLink.href = contact.mapUrl;
-      mapLink.target = "_blank";
-      mapLink.rel = "noopener noreferrer";
-      mapLink.textContent = contact.address;
-      address.replaceChildren(mapLink);
-    } else {
-      address.textContent = contact.address;
-    }
-  }
+  if (address && contact.address) address.textContent = contact.address;
   var hours = document.getElementById("hours-text");
   if (hours && contact.openingHours) hours.textContent = contact.openingHours;
   var phoneText = document.getElementById("phone-text");
